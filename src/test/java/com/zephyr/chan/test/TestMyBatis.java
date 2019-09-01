@@ -37,4 +37,31 @@ public class TestMyBatis {
         sqlSession.close();
         resourceAsStream.close();
     }
+
+
+    @Test
+    public void test2() throws IOException {
+        //加载配置文件
+        InputStream resourceAsStream = Resources.getResourceAsStream("SqlMapConfig.xml");
+
+        //创建SqlSessionFactory对象
+        SqlSessionFactory factory =
+                new SqlSessionFactoryBuilder().build(resourceAsStream);
+
+        //创建SqlSession对象
+        SqlSession sqlSession = factory.openSession();
+        //获取到代理对象
+
+        AccountDao dao = sqlSession.getMapper(AccountDao.class);
+
+        Account account = new Account();
+        account.setMoney(321d);
+        account.setName("呵呵");
+
+        dao.saveAccount(account);
+        sqlSession.commit();
+
+        sqlSession.close();
+        resourceAsStream.close();
+    }
 }
