@@ -1,7 +1,7 @@
-package com.zephyr.chen.controller;
+package com.zephyr.chan.controller;
 
-import com.zephyr.chen.domain.Account;
-import com.zephyr.chen.service.IAccountService;
+import com.zephyr.chan.domain.Account;
+import com.zephyr.chan.service.IAccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

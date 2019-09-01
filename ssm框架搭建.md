@@ -296,7 +296,7 @@
           xmlns:context="http://www.springframework.org/schema/context"
           xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
        <!--开启注解扫描-->
-       <context:component-scan base-package="com.zephyr.chen">
+       <context:component-scan base-package="com.zephyr.chan">
            <!--配置哪些注解不扫描进来-->
            <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
        </context:component-scan>
@@ -320,7 +320,7 @@
           http://www.springframework.org/schema/mvc 
           http://www.springframework.org/schema/mvc/spring-mvc.xsd">
        <!--开启注解扫描,只扫描Controller注解-->
-       <context:component-scan base-package="com.zephyr.chen">
+       <context:component-scan base-package="com.zephyr.chan">
            <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
        </context:component-scan>
        <!--配置视图解析器对象-->

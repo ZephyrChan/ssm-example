@@ -1,6 +1,6 @@
-package com.zephyr.chen.service;
+package com.zephyr.chan.service;
 
-import com.zephyr.chen.domain.Account;
+import com.zephyr.chan.domain.Account;
 
 import java.util.List;
 

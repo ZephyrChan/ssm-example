@@ -1,4 +1,4 @@
-package com.zephyr.chen.domain;
+package com.zephyr.chan.domain;
 
 public class Account {
     private Integer id;

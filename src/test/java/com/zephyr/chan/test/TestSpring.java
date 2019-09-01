@@ -1,6 +1,6 @@
 package com.zephyr.chan.test;
 
-import com.zephyr.chen.service.IAccountService;
+import com.zephyr.chan.service.IAccountService;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

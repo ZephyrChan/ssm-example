@@ -1,7 +1,7 @@
-package com.zephyr.chen.service.impl;
+package com.zephyr.chan.service.impl;
 
-import com.zephyr.chen.domain.Account;
-import com.zephyr.chen.service.IAccountService;
+import com.zephyr.chan.domain.Account;
+import com.zephyr.chan.service.IAccountService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
