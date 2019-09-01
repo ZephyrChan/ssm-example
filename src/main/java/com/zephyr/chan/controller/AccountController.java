@@ -7,6 +7,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.List;
 
 @Controller
@@ -28,4 +31,12 @@ public class AccountController {
         return "list";
     }
 
+    @RequestMapping("/save")
+    public void save(Account account, HttpServletRequest request, HttpServletResponse response) throws IOException {
+        System.out.println("AccountController.save()执行了。。。。");
+        //调用service的方法
+        iAccountService.saveAccount(account);
+        response.sendRedirect(request.getContextPath()+"/account/findAll");
+        return;
+    }
 }
